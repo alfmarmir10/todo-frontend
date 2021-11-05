@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Yanone+Kaffeesatz:wght@300;400;500;700&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Yanone Kaffeesatz', sans-serif; */
+:root{
+    --Montserrat: 'Montserrat', Helvetica;
+    --Yanone: 'Yanone Kaffeesatz', Helvetica;
+    --LightBlue: #8ecae6;
+    --MediumBlue: #219ebc;
+    --DarkBlue: #023047;
+    --Yellow: #ffb703;
+    --Orange: #fb8500;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: var(--Montserrat);
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+body{
+    scrollbar-width: none;    
+}
+
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+.MAIN_CONTAINER{
+  background-image: url('./assets/bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.TITLE{
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 2vh;
+}
+
+.SET_INPUT{
+  width: 70%;
+  height: 7vh;
+  border-radius: 10px;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1vh;
+  margin-top: 2vh;
+  box-shadow: 0px 0px 10px 2px white;
+  border: none;
+}
+
+.TASKS_MAIN_CONTAINER{
+  width: 70%;
+  min-height: 70%;
+  max-height: 70%;
+  /* background-color: rgba(255, 255, 255, 0.05); */
+  border-radius: 10px;
+  padding: 1vh;
+  margin-top: 6vh;
+  /* border: 0.5px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 0px 0px 5px 0px white; */
+}
+
+.TASKS_CARD{
+  width: 100%;
+  height: 4vh;
+  /* background-color: #023047; */
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  margin-top: 3vh;
+}
+
+.CHECK_MAIN_CONTAINER{
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.CHECK_OPTION_CONTAINER{
+  width: 2vw;
+  min-height: 2vw;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.TASK_DESCRIPTION_CONTAINER{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.TASK_DESCRIPTION{
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: white;
+}
+
+.CHECKED_ICON{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.DELETE_ICON_MAIN_CONTAINER{
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.DELETE_ICON{
+  width: 3vw;
+  height: 3vw;
+}
